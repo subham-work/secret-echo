@@ -1,0 +1,41 @@
+# Node modules in both backend and frontend
+backend/node_modules/
+frontend/node_modules/
+
+# Environment files
+*.env
+*.env.local
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build and dist folders
+backend/dist/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
+*.lcov
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Cache
+.cache/
+.eslintcache
