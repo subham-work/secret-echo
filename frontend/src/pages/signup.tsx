@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link"; 
 import axios from "@/utils/axios";
 import { validateAuthForm, ValidationErrors } from "@/utils/validateAuthForm";
 import Loader from "../components/Loader";
@@ -47,7 +48,7 @@ const SignupPage = () => {
             type="text"
             id="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value.trim())}
           />
           {formErrors.email && <p className="error-message">{formErrors.email}</p>}
         </div>
@@ -87,7 +88,7 @@ const SignupPage = () => {
 
       <div className="auth-link">
         <span>Already have an account? </span>
-        <a href="/login">Login</a>
+        <Link href="/login">Login</Link>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ module.exports = {
   },
   env: {
     // Optionally, define environment variables to be used in your application
-    API_URL: process.env.API_URL || "http://localhost:5000",
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000",
   },
   webpack(config, { isServer }) {
     // Modify webpack configuration if needed

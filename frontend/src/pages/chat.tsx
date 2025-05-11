@@ -36,7 +36,7 @@ const ChatPage = () => {
       .catch((err) => console.error("Failed to fetch messages", err));
 
     // Initialize socket connection
-    socketRef.current = io(process.env.API_URL);
+    socketRef.current = io(process.env.NEXT_PUBLIC_API_URL);
 
     socketRef.current.emit("join", userId);
 
